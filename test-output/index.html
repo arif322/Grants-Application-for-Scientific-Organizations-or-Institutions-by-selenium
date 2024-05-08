@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 9 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-TestSuite" class="navigator-link">
-              <span class="suite-name border-passed">TestSuite</span>
+              <span class="suite-name border-failed">TestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,61 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">11 methods, 9 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestSuite" class="hide-methods failed suite-TestSuite"> (hide)</a> <!-- hide-methods failed suite-TestSuite -->
+                      <a href="#" panel-name="suite-TestSuite" class="show-methods failed suite-TestSuite"> (show)</a> <!-- show-methods failed suite-TestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-TestSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="Pages.ApplicationPage" class="method navigator-link" hash-for-method="ApplictionsPage">ApplictionsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="Pages.ApplicationPage" class="method navigator-link" hash-for-method="onFinish">onFinish</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="Pages.ApplicationPage" class="method navigator-link" hash-for-method="onStart">onStart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="Pages.ApplicationPage" class="method navigator-link" hash-for-method="onTestFailedButWithinSuccessPercentage">onTestFailedButWithinSuccessPercentage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="Pages.ApplicationPage" class="method navigator-link" hash-for-method="onTestFailedWithTimeout">onTestFailedWithTimeout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="Pages.ApplicationPage" class="method navigator-link" hash-for-method="onTestFailure">onTestFailure</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="Pages.ApplicationPage" class="method navigator-link" hash-for-method="onTestSkipped">onTestSkipped</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="Pages.ApplicationPage" class="method navigator-link" hash-for-method="onTestStart">onTestStart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="Pages.ApplicationPage" class="method navigator-link" hash-for-method="onTestSuccess">onTestSuccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -123,6 +177,136 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TestSuite" class="panel TestSuite">
+          <div class="suite-TestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Pages.ApplicationPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ApplictionsPage">
+                  </a> <!-- ApplictionsPage -->
+                  <span class="method-name">ApplictionsPage</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: Element &lt;div class=&quot;ant-upload-text&quot;&gt; is not reachable by keyboard
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [3d66120a-a878-4363-8488-a37771f70cf9, sendKeysToElement {value=[Ljava.lang.CharSequence;@869d87c, id=dc23503c-90fe-48c2-a371-cac61220acba}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.3, moz:accessibilityChecks: false, moz:buildID: 20240425211020, moz:debuggerAddress: 127.0.0.1:45917, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12992, moz:profile: C:\Users\Ariful\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:45917/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (3d66120a-a878-4363-8488-a37771f70cf9)] -&gt; xpath: (//div[@class=&apos;ant-upload-text&apos;])[1]]
+Session ID: 3d66120a-a878-4363-8488-a37771f70cf9
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at Pages.ApplicationPage.ApplictionsPage(ApplicationPage.java:226)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="onFinish">
+                  </a> <!-- onFinish -->
+                  <span class="method-name">onFinish</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;Object.equals(Object)&quot; because &quot;this.m_retryAnalyzerClass&quot; is null
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="onStart">
+                  </a> <!-- onStart -->
+                  <span class="method-name">onStart</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;Object.equals(Object)&quot; because &quot;this.m_retryAnalyzerClass&quot; is null
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="onTestFailedButWithinSuccessPercentage">
+                  </a> <!-- onTestFailedButWithinSuccessPercentage -->
+                  <span class="method-name">onTestFailedButWithinSuccessPercentage</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="onTestFailedWithTimeout">
+                  </a> <!-- onTestFailedWithTimeout -->
+                  <span class="method-name">onTestFailedWithTimeout</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="onTestFailure">
+                  </a> <!-- onTestFailure -->
+                  <span class="method-name">onTestFailure</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="onTestSkipped">
+                  </a> <!-- onTestSkipped -->
+                  <span class="method-name">onTestSkipped</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="onTestStart">
+                  </a> <!-- onTestStart -->
+                  <span class="method-name">onTestStart</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="onTestSuccess">
+                  </a> <!-- onTestSuccess -->
+                  <span class="method-name">onTestSuccess</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-failed -->
           <div class="suite-TestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -163,11 +347,12 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;TestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;BSTFT Application Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Pages.LoginPage&quot;/&gt;
       &lt;class name=&quot;Pages.DetailsPage&quot;/&gt;
+      &lt;class name=&quot;Pages.ApplicationPage&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- BSTFT Application Test --&gt;
 &lt;/suite&gt; &lt;!-- TestSuite --&gt;
@@ -181,7 +366,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">BSTFT Application Test (2 classes)</span>
+                <span class="test-name">BSTFT Application Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -207,20 +392,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(11);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'gotoApplication')
 data.setCell(0, 2, 'Pages.DetailsPage')
-data.setCell(0, 3, 69986);
+data.setCell(0, 3, 78501);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginPages')
-data.setCell(1, 2, 'Pages.LoginPage')
-data.setCell(1, 3, 7509);
+data.setCell(1, 1, 'ApplictionsPage')
+data.setCell(1, 2, 'Pages.ApplicationPage')
+data.setCell(1, 3, 40393);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginPages')
+data.setCell(2, 2, 'Pages.LoginPage')
+data.setCell(2, 3, 9061);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'onFinish')
+data.setCell(3, 2, 'Pages.ApplicationPage')
+data.setCell(3, 3, 3679);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'onStart')
+data.setCell(4, 2, 'Pages.ApplicationPage')
+data.setCell(4, 3, 3);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'onTestStart')
+data.setCell(5, 2, 'Pages.ApplicationPage')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'onTestSuccess')
+data.setCell(6, 2, 'Pages.ApplicationPage')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'onTestFailedButWithinSuccessPercentage')
+data.setCell(7, 2, 'Pages.ApplicationPage')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'onTestFailure')
+data.setCell(8, 2, 'Pages.ApplicationPage')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'onTestFailedWithTimeout')
+data.setCell(9, 2, 'Pages.ApplicationPage')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'onTestSkipped')
+data.setCell(10, 2, 'Pages.ApplicationPage')
+data.setCell(10, 3, 0);
 window.suiteTableData['TestSuite']= { tableData: data, tableDiv: 'times-div-TestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-TestSuite">
               </div> <!-- times-div-TestSuite -->
             </div> <!-- times-div -->
@@ -235,11 +456,20 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-TestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">Pages.DetailsPage</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Pages.ApplicationPage</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUp</span>
                 <br/>
@@ -257,26 +487,47 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">Pages.LoginPage</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">setUp(chrome)</span>
+                <span class="method-name">setUp(firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">loginPages</span>
-                <span class="method-start">5226 ms</span>
+                <span class="method-start">7905 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Pages.DetailsPage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">gotoApplication</span>
-                <span class="method-start">12748 ms</span>
+                <span class="method-start">16982 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Pages.ApplicationPage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ApplictionsPage</span>
+                <span class="method-start">95483 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">onFinish</span>
+                <span class="method-start">136052 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">onStart</span>
+                <span class="method-start">139903 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Pages.LoginPage</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">84163 ms</span>
+                <span class="method-start">141175 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

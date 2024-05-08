@@ -1,5 +1,7 @@
 package Utilities;
 
+
+
 public class MasterData {
 	
 	public String baseUrl = "https://tr-services.most.gov.bd/";
@@ -28,6 +30,17 @@ public class MasterData {
 	public String mobile = "01700000001";
 	public String department = "BAEC";
 	public String reg_number = "123456";
+	public String president_name = "Enamul Haq";
+	public String president_number = "01500000000";
+	public String secretaty_name = "Nazmul Hasan";
+	public String secretaty_number = "01600000000";
+	public String cashier_name = "Harun Or Rashid";
+	public String cashier_number = "01700000000";
+	public String Activities_Name = "Sports";
+	 public String month = "May";
+	 public String day = "16";
+	public String Year = "2023";
+	
 	
 	
 	

@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="chrome"/>
+  <parameter name="browser" value="firefox"/>
   <test thread-count="5" name="BSTFT Application Test(failed)">
     <classes>
-      <class name="Pages.DetailsPage">
+      <class name="Pages.ApplicationPage">
         <methods>
+          <include name="onStart"/>
+          <include name="ApplictionsPage"/>
           <include name="tearDown"/>
-          <include name="gotoApplication"/>
           <include name="setUp"/>
+          <include name="onFinish"/>
+          <include name="onTestSuccess"/>
+          <include name="onTestSkipped"/>
+          <include name="onTestStart"/>
+          <include name="onTestFailedButWithinSuccessPercentage"/>
+          <include name="onTestFailure"/>
+          <include name="onTestFailedWithTimeout"/>
         </methods>
-      </class> <!-- Pages.DetailsPage -->
+      </class> <!-- Pages.ApplicationPage -->
     </classes>
   </test> <!-- BSTFT Application Test(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="TestSuite" parallel="false">
-	<parameter name="browser" value="chrome" />
+	<parameter name="browser" value="firefox" />
 
 
 	<!-- <listeners>
@@ -12,9 +12,10 @@
 	<test name="BSTFT Application Test">
 		<classes>
 			<class name="Pages.LoginPage" />
-			<class name="Pages.DetailsPage" />	
-					
+			<class name="Pages.DetailsPage" />
+			<class name="Pages.ApplicationPage" />						
 		</classes>
+		
  
 	</test>
 	

@@ -1,7 +1,5 @@
 package Pages;
 
-import java.io.File;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -47,13 +45,26 @@ public class DetailsPage extends ExtentITestListenerClassAdapter {
 		Institute.click();
 		Institute.sendKeys(info.university);
 		Institute.sendKeys(Keys.ARROW_DOWN);
+		Thread.sleep(1500);
 		Institute.sendKeys(Keys.ENTER);
 		Thread.sleep(1500);
 
-
-		WebElement Profile = driver.findElement(By.xpath("//div[@class='ant-upload ant-upload-select ant-upload-select-picture-card']//span[@role='button']"));
-		File file = new File("src/test/resources/image/images.jpg");
-		Profile.sendKeys(file.getAbsolutePath());
+		
+		
+		String file = "C:\\Users\\Ariful\\Downloads\\images.jpg";
+		WebElement Profile = driver.findElement(By.xpath("//input[@type='file' and @accept='.jpg,.jpeg,.png,.gif,.bmp']"));
+		Profile.sendKeys(file);
+		
+//		if (file.exists()) {
+//		    if (Profile.isDisplayed() && Profile.isEnabled()) {
+//		    	Profile.sendKeys(file.getAbsolutePath());
+//		    } else {
+//		        System.out.println("File input field is not visible or enabled.");
+//		    }
+//		} else {
+//		    System.out.println("File does not exist at the specified path.");
+//		}
+//		Profile.sendKeys(file.getAbsolutePath());
 		Thread.sleep(1200);
 
 		WebElement House = driver.findElement(By.id("scienceClubForm_house_road_no"));
@@ -203,8 +214,11 @@ public class DetailsPage extends ExtentITestListenerClassAdapter {
 		reg_number.sendKeys(info.office_phone_number);
 		Thread.sleep(1500);
 		
-		WebElement save_1st_step = driver.findElement(By.xpath("//button[@class='ant-btn ant-btn-primary ant-btn-lg']"));
+		WebElement save_1st_step = driver.findElement(By.xpath("//span[normalize-space()='Save and Continue']"));
+		//save_1st_step.click();
 		save_1st_step.click();
+		Thread.sleep(5000);
+	}
 		
 		
 
@@ -224,4 +238,4 @@ public class DetailsPage extends ExtentITestListenerClassAdapter {
 	}
 
 
-}
+
